@@ -14,7 +14,7 @@ function Server() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        const user_id = localStorage?.getItem("user_id")
+        const user_id = localStorage?.getItem("user_id");
 
         let response = await makeRequest({ prompt: input, user_id: user_id });
         response = response.data.split('\n').map((line, index) => <p key={index}>{line}</p>);
@@ -30,9 +30,8 @@ function Server() {
     }
 
     return (
-
         <div className='App'>
-            < SideMenu />
+            <SideMenu />
             <section className='chatbox'>
                 <div className='chat-log'>
                     {chatLog.map((message, index) => (
@@ -41,18 +40,21 @@ function Server() {
                 </div>
                 <div className='chat-input-holder'>
                     <form onSubmit={handleSubmit}>
-                        <input
+                        <textarea
                             type='text'
                             className='chat-input-textarea'
                             value={input}
                             onChange={e => setInput(e.target.value)}
+                            placeholder="Ask me anything..."
+                            rows={3}
                         />
+                        <button type='submit' className='send-button'>
+                            Send
+                        </button>
                     </form>
                 </div>
             </section>
-
         </div>
-
     );
 }
 

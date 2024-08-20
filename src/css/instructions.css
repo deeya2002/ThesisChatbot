@@ -1,0 +1,60 @@
+.instructions {
+    /* background-color: $off-white; */
+    border: 1px solid #e6e6e6; /* darken($off-white, 10%) */
+    border-radius: 5px;
+    margin-top: 20px !important; /* $lg */
+    margin-bottom: 20px !important; /* $lg */
+    padding: 10px 15px 20px 15px; /* $xs $sm $lg $sm */
+}
+
+.instructions h1 {
+    color: #333333; /* $off-black */
+    font-size: 16px; /* $md */
+    text-align: center;
+}
+
+.instructions .lifeline {
+    position: relative;
+    top: -3px;
+}
+
+.instructions .lifeline-icon {
+    color: #00ff00; /* $green */
+    cursor: pointer;
+}
+
+.instructions ul.browser-default {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.instructions ul.browser-default li {
+    list-style-type: initial;
+}
+
+.instructions li ol li {
+    margin-left: 30px;
+}
+
+.instructions img {
+    width: 80%;
+    height: 50%;
+}
+
+/* 
+.instructions span a {
+    color: $off-black;
+}
+
+.instructions span a:hover {
+    color: $link-color;
+}
+*/
+
+@media (max-width: 768px) { /* $md-breakpoint */
+    .instructions img {
+        width: 100% !important;
+        height: 150% !important;   
+    }
+}

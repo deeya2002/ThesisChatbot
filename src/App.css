@@ -75,8 +75,10 @@
   border: 1px solid #e0e0e0;
   border-radius: 20px;
   outline: none;
+  width: 450px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease;
+  width: 1250px;
 }
 
 .chat-input-textarea:focus {
@@ -103,6 +105,24 @@
   outline: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+.send-button {
+  background-color: #007bff;
+  /* Adjust the color as needed */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+}
+
 
 @media (max-width: 768px) {
   .App {

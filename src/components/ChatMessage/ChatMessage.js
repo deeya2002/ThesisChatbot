@@ -91,7 +91,7 @@ import './ChatMessage.css';
 const ChatMessage = ({ message }) => {
   return (
     <div className="chat-container">
-      <h1>Chatbot</h1> {/* Add heading for chatbot */}
+      <h1>Chatbot</h1> 
       <div className={`chat-message ${message.user === 'gpt' ? 'chatgpt' : 'user'}`}>
         <div className='chat-message-center'>
           <div className={`avatar ${message.user === 'gpt' ? 'chatgpt' : 'user'}`}>

@@ -27,15 +27,7 @@ const SideMenu = () => {
         New Chat Questions
       </div>
       <div className='sidemenu-buttons'>
-        <button className="btn btn-outline mb-2">Quiz App</button>
-      </div>
-      <div className='auth-buttons'>
-        <Link className="btn btn-outline-danger" to="/login">
-          Login
-        </Link>
-        <Link className="btn btn-outline-success ms-2" to="/register">
-          Register
-        </Link>
+        <Link className="btn btn-outline mb-2" to="/quiz">Quiz App</Link>
       </div>
       <div className='history-section'>
         <h5>History</h5>
@@ -48,6 +40,14 @@ const SideMenu = () => {
             <li>No history available</li>
           )}
         </ul>
+      </div>
+      <div className='auth-buttons'>
+        <Link className="btn btn-outline-danger" to="/login">
+          Login
+        </Link>
+        <Link className="btn btn-outline-success ms-2" to="/register">
+          Register
+        </Link>
       </div>
     </aside>
   );
